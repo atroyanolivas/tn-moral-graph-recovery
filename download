@@ -1,0 +1,13 @@
+# Ignore Virtual Env
+.venv/
+tn_for_nn_explicability.egg-info/
+tn_causal/__pycache__
+tests/__pycache__
+.vscode/
+examples/__pycache__
+moral_graph_experiments/__pycache__
+moral_graph_experiments/figen_chain.csv
+moral_graph_experiments/figen_collider.csv
+moral_graph_experiments/figen_fork.csv
+neural-networks/__pycache__
+activations_experiments/__pycache__
