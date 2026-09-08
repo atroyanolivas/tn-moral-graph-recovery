@@ -70,9 +70,9 @@ def test_manual_contraction_m3():
 
     fctn = FCTN(dims=[d0, d1, d2], r_max=r, K=r)
     N0, N1, N2 = fctn.local_tensors
-    B01 = fctn.bonds["0-1"].matrix()
-    B02 = fctn.bonds["0-2"].matrix()
-    B12 = fctn.bonds["1-2"].matrix()
+    B01 = fctn.bonds["0_1"].matrix()
+    B02 = fctn.bonds["0_2"].matrix()
+    B12 = fctn.bonds["1_2"].matrix()
 
     p_manual = torch.zeros(d0, d1, d2)
     for s0 in range(d0):
@@ -157,7 +157,7 @@ def test_effective_graph_all_zero():
         for bond in fctn.bonds.values():
             bond.U.zero_()
             bond.V.zero_()
-    assert fctn.effective_graph(threshold=1e-8) == []
+    assert fctn.effective_graph() == []
 
 
 def test_effective_graph_all_active():
@@ -167,7 +167,7 @@ def test_effective_graph_all_active():
         for bond in fctn.bonds.values():
             nn.init.eye_(bond.U)
             nn.init.eye_(bond.V)
-    edges = fctn.effective_graph(threshold=0.1)
+    edges = fctn.effective_graph()
     assert set(edges) == {(0, 1), (0, 2), (1, 2)}
 
 
