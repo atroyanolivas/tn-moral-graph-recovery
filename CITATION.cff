@@ -1,7 +1,17 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the paper."
-title: "Tensor Network Moral Graph Recovery of Discrete Probability Distributions"
-type: article
+message: "If you use this code, please cite the paper below."
+title: "tn-causal-moral-graph: Tensor Network Moral Graph Recovery"
+version: "1.0.0"
+date-released: 2026-07-15   # replace with your actual v1.0 release date
+license: Apache-2.0
+repository-code: "https://github.com/atroyanolivas/tn-causal-moral-graph"
+url: "https://github.com/atroyanolivas/tn-causal-moral-graph"
+keywords:
+  - causal discovery
+  - tensor networks
+  - moral graph
+  - structure learning
+  - nuclear norm
 authors:
   - family-names: "Troyano Olivas"
     given-names: "Álvaro"
@@ -13,10 +23,20 @@ authors:
     given-names: "Momtchil"
   - family-names: "Martín"
     given-names: "Vicente"
-journal: "arXiv preprint"
-identifiers:
-  - type: url
-    value: "https://arxiv.org/abs/XXXX.XXXXX"
-repository-code: "https://github.com/atroyanolivas/tn-causal-moral-graph"
-keywords: [causal discovery, tensor networks, moral graph, structure learning, nuclear norm]
-license: Apache-2.0
+preferred-citation:
+  type: article
+  title: "Tensor Network Moral Graph Recovery of Discrete Probability Distributions"
+  authors:
+    - family-names: "Troyano Olivas"
+      given-names: "Álvaro"
+    - family-names: "Fung"
+      given-names: "Chi-Hang Fred"
+    - family-names: "Brunner"
+      given-names: "Hans H."
+    - family-names: "Peev"
+      given-names: "Momtchil"
+    - family-names: "Martín"
+      given-names: "Vicente"
+  journal: "arXiv preprint arXiv:XXXX.XXXXX"
+  year: 2026
+  url: "https://arxiv.org/abs/XXXX.XXXXX"
