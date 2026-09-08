@@ -19,9 +19,12 @@ def test_bond_gradient_flows():
     assert bond.U.grad.shape == bond.U.shape
 
 
-def test_zero_init_gives_near_zero_matrix():
+def test_zero_init_starts_near_baseline():
+    """At init the correction is small (but not exactly zero) and B ~ J."""
     bond = BondMatrix(0, 1, r_max=8, K=8)
-    assert bond.matrix().abs().max() < 0.5  # small but not exactly zero
+    C = bond.U @ bond.V.t()
+    assert 0.0 < C.abs().max() < 0.5                   # small but not exactly zero
+    assert (bond.matrix() - 1.0).abs().max() < 0.5
 
 
 def test_nuclear_norm_no_grad():
@@ -33,6 +36,6 @@ def test_nuclear_norm_no_grad():
 if __name__ == "__main__":
     test_bond_shapes()
     test_bond_gradient_flows()
-    test_zero_init_gives_near_zero_matrix()
+    test_zero_init_starts_near_baseline()
     test_nuclear_norm_no_grad()
     print("All bond tests passed.")
