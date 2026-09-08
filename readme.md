@@ -87,8 +87,29 @@ the script.
 
 ### Tests
 
+The suite covers the four core modules:
+
+| File | What it checks |
+|---|---|
+| `tests/test_bond_matrix.py` | `J + UV^T` bond parameterization and the variational penalty |
+| `tests/test_fctn.py` | FCTN ansatz and contraction correctness |
+| `tests/test_optimizer.py` | objective, gradients, and Adam training loop |
+| `tests/test_thresholding.py` | rank-based effective-graph extraction (pruning at `tol=1e-6`) |
+
+Install the test dependencies and run from the repository root:
+
 ```bash
-pytest
+pip install -e .
+pip install pytest
+python -m pytest
+```
+
+Useful variants:
+
+```bash
+python -m pytest -v                          # one line per test
+python -m pytest tests/test_bond_matrix.py   # a single file
+python -m pytest -k thresholding             # tests whose name matches
 ```
 
 ## Reproducibility notes
