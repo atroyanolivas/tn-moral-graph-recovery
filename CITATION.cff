@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "Tensor Network Moral Graph Recovery of Discrete Probability Distributions"
+type: article
+authors:
+  - family-names: "Troyano Olivas"
+    given-names: "Álvaro"
+  - family-names: "Fung"
+    given-names: "Chi-Hang Fred"
+  - family-names: "Brunner"
+    given-names: "Hans H."
+  - family-names: "Peev"
+    given-names: "Momtchil"
+  - family-names: "Martín"
+    given-names: "Vicente"
+journal: "arXiv preprint"
+identifiers:
+  - type: url
+    value: "https://arxiv.org/abs/XXXX.XXXXX"
+repository-code: "https://github.com/atroyanolivas/tn-causal-moral-graph"
+keywords: [causal discovery, tensor networks, moral graph, structure learning, nuclear norm]
+license: Apache-2.0
