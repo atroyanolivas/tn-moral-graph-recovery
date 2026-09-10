@@ -4,7 +4,7 @@ Official code for **"Tensor Network Moral Graph Recovery of Discrete Probability
 Distributions"** — Álvaro Troyano Olivas, Chi-Hang Fred Fung, Hans H. Brunner,
 Momtchil Peev, Vicente Martín.
 
-📄 **Paper:** [arXiv:XXXX.XXXXX](https://arxiv.org/abs/XXXX.XXXXX)
+📄 **Paper:** [arXiv:2609.09258]([https://arxiv.org/abs/XXXX.XXXXX](https://arxiv.org/abs/2609.09258)
 
 ## What this does
 
@@ -126,12 +126,14 @@ python -m pytest -k thresholding             # tests whose name matches
 If you use this code, please cite:
 
 ```bibtex
-@article{troyano2026tnmoral,
-  title   = {Tensor Network Moral Graph Recovery of Discrete Probability Distributions},
-  author  = {Troyano Olivas, '{A}lvaro and Fung, Chi-Hang Fred and Brunner, Hans H.
-             and Peev, Momtchil and Mart{\'i}n, Vicente},
-  journal = {arXiv preprint arXiv:XXXX.XXXXX},
-  year    = {2026}
+@misc{olivas2026tensornetworkmoralgraph,
+      title={Tensor Network Moral Graph Recovery of Discrete Probability Distributions}, 
+      author={Á. Troyano Olivas and Chi-Hang Fred Fung and Hans H. Brunner and Momtchil Peev and Vicente Martin},
+      year={2026},
+      eprint={2609.09258},
+      archivePrefix={arXiv},
+      primaryClass={stat.ML},
+      url={https://arxiv.org/abs/2609.09258}, 
 }
 ```
 
