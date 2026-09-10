@@ -4,7 +4,7 @@ Official code for **"Tensor Network Moral Graph Recovery of Discrete Probability
 Distributions"** — Álvaro Troyano Olivas, Chi-Hang Fred Fung, Hans H. Brunner,
 Momtchil Peev, Vicente Martín.
 
-📄 **Paper:** [arXiv:2609.09258]([https://arxiv.org/abs/2609.09258)](https://arxiv.org/abs/2609.09258)
+📄 **Paper:** [arXiv:2609.09258](https://arxiv.org/abs/2609.09258)
 
 ## What this does
 
